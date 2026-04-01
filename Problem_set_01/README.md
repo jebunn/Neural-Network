@@ -78,7 +78,7 @@ Image Parameters
 - Color Mode: RGB (3 channels)
 - Class Mode: Binary (0 = NORMAL, 1 = PNEUMONIA)
 
-3. Model Architecture — Custom CNN
+Model Architecture — Custom CNN
 
 ```
 Input: (224, 224, 3)
@@ -94,7 +94,7 @@ Input: (224, 224, 3)
 └── Dense(1, sigmoid)  ← Binary output
 ```
 
-4. Model Compilation
+Model Compilation
 
 | Parameter | Value |
 |---|---|
@@ -103,7 +103,7 @@ Input: (224, 224, 3)
 | Metrics | Accuracy, AUC, Precision, Recall |
 
 
-5. Training Strategy
+Training Strategy
 
 Callbacks Used:
 | Callback | Purpose | Setting |
@@ -124,7 +124,7 @@ Applied `compute_class_weight('balanced')` to automatically handle class imbalan
 
  Results & Findings
 
-### Training Performance (Epoch 1 snapshot)
+Training Performance (Epoch 1 snapshot)
 
 | Metric | Train Value |
 |--------|------------|
@@ -161,6 +161,7 @@ The model predicted every single test image as PNEUMONIA:
 - NORMAL correctly identified: 0/234 (0% Recall)
 
 Conclusion
+
 The CNN model successfully classified chest X-ray images into NORMAL and PNEUMONIA categories. Data augmentation and class weighting improved model performance. Overall, the model shows effective results for medical image classification.
 
 
