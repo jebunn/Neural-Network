@@ -43,7 +43,6 @@ These weights were applied during training to penalise misclassification of the 
 
 Approach & Methodology
 
-Data Preprocessing
 
 Image augmentation (rescaling, rotation, shifting, zoom, flipping) was applied to the training data to reduce overfitting. Images were resized and loaded using generators, and split into training, validation, and test sets.
 
