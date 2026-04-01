@@ -43,16 +43,15 @@ These weights were applied during training to penalise misclassification of the 
 
 Approach & Methodology
 
-Data Preprocessing
 Image augmentation (rescaling, rotation, shifting, zoom, flipping) was applied to the training data to reduce overfitting. Images were resized and loaded using generators, and split into training, validation, and test sets.
 
-Model
+
 A CNN model was used consisting of convolutional, pooling, dropout, and dense layers. A sigmoid activation function was applied for binary classification.
 
-Training
+
 Binary cross-entropy loss and Adam optimizer were used, with accuracy as the evaluation metric. Class weights were applied to handle imbalance, and EarlyStopping was used to prevent overfitting.
 
-Evaluation
+
 The model was evaluated using accuracy, confusion matrix, and training-validation performance plots.
 
 Data Preprocessing
