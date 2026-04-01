@@ -44,6 +44,18 @@ These weights were applied during training to penalise misclassification of the 
 Approach & Methodology
 
 Data Preprocessing
+Image augmentation (rescaling, rotation, shifting, zoom, flipping) was applied to the training data to reduce overfitting. Images were resized and loaded using generators, and split into training, validation, and test sets.
+
+Model
+A CNN model was used consisting of convolutional, pooling, dropout, and dense layers. A sigmoid activation function was applied for binary classification.
+
+Training
+Binary cross-entropy loss and Adam optimizer were used, with accuracy as the evaluation metric. Class weights were applied to handle imbalance, and EarlyStopping was used to prevent overfitting.
+
+Evaluation
+The model was evaluated using accuracy, confusion matrix, and training-validation performance plots.
+
+Data Preprocessing
 
 Image Augmentation (Training only)
 To combat overfitting and improve generalisation, the following augmentations were applied to training images:
@@ -148,6 +160,9 @@ Confusion Matrix Analysis
 The model predicted every single test image as PNEUMONIA:
 - PNEUMONIA correctly identified: 390/390 (100% Recall)
 - NORMAL correctly identified: 0/234 (0% Recall)
+
+Conclusion
+The CNN model successfully classified chest X-ray images into NORMAL and PNEUMONIA categories. Data augmentation and class weighting improved model performance. Overall, the model shows effective results for medical image classification.
 
 
 
