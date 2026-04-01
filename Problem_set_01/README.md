@@ -1,7 +1,5 @@
 Chest X-Ray Pneumonia Classification using CNN
 
-Directory Structure
-
 ```
 PneumoniaCNN/
 │
